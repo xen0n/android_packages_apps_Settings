@@ -80,8 +80,14 @@ public class ButtonBacklightBrightness extends DialogPreference implements
             int defaultBrightness = context.getResources().getInteger(
                     com.android.internal.R.integer.config_buttonBrightnessSettingDefault);
 
+            int overriddenEnabledBrightness = 0;
+            if (defaultBrightness == 0) {
+                overriddenEnabledBrightness = context.getResources().getInteger(
+                        com.android.internal.R.integer.config_buttonBrightnessOverriddenEnabledValue);
+            }
+
             mButtonBrightness = new BrightnessControl(
-                    CMSettings.Secure.BUTTON_BRIGHTNESS, isSingleValue, defaultBrightness);
+                    CMSettings.Secure.BUTTON_BRIGHTNESS, isSingleValue, defaultBrightness, overriddenEnabledBrightness);
             mActiveControl = mButtonBrightness;
         }
 
@@ -233,8 +239,11 @@ public class ButtonBacklightBrightness extends DialogPreference implements
                 || (deviceKeys & ButtonSettings.KEY_MASK_MENU) != 0
                 || (deviceKeys & ButtonSettings.KEY_MASK_ASSIST) != 0
                 || (deviceKeys & ButtonSettings.KEY_MASK_APP_SWITCH) != 0;
+        boolean isBacklightForceEnabled = res.getBoolean(
+                com.android.internal.R.bool.config_buttonBrightnessForceConfigurable);
         boolean hasBacklight = res.getInteger(
-                com.android.internal.R.integer.config_buttonBrightnessSettingDefault) > 0;
+                com.android.internal.R.integer.config_buttonBrightnessSettingDefault) > 0
+                || isBacklightForceEnabled;
 
         return hasBacklightKey && hasBacklight;
     }
@@ -365,14 +374,20 @@ public class ButtonBacklightBrightness extends DialogPreference implements
         private String mSetting;
         private boolean mIsSingleValue;
         private int mDefaultBrightness;
+        private int mOverriddenEnabledBrightness;
         private CheckBox mCheckBox;
         private SeekBar mSeekBar;
         private TextView mValue;
 
-        public BrightnessControl(String setting, boolean singleValue, int defaultBrightness) {
+        public BrightnessControl(String setting, boolean singleValue, int defaultBrightness, int overriddenEnabledBrightness) {
             mSetting = setting;
             mIsSingleValue = singleValue;
             mDefaultBrightness = defaultBrightness;
+            mOverriddenEnabledBrightness = overriddenEnabledBrightness;
+        }
+
+        public BrightnessControl(String setting, boolean singleValue, int defaultBrightness) {
+            this(setting, singleValue, defaultBrightness, 0);
         }
 
         public BrightnessControl(String setting, boolean singleValue) {
@@ -402,7 +417,8 @@ public class ButtonBacklightBrightness extends DialogPreference implements
 
         public int getBrightness(boolean persisted) {
             if (mCheckBox != null && !persisted) {
-                return mCheckBox.isChecked() ? mDefaultBrightness : 0;
+                int brightness = mDefaultBrightness > 0 ? mDefaultBrightness : mOverriddenEnabledBrightness;
+                return mCheckBox.isChecked() ? brightness : 0;
             } else if (mSeekBar != null && !persisted) {
                 return mSeekBar.getProgress();
             }
