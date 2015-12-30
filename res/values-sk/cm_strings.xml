@@ -132,8 +132,9 @@
   <string name="volbtn_cursor_control_on_reverse">Hlasitosť nahor/nadol presunie kurzor doprava/doľava</string>
   <string name="swap_volume_buttons_title">Preorientovať</string>
   <string name="swap_volume_buttons_summary">Po otočení obrazovky prevrátiť zmysel tlačidiel hlasitosti</string>
-  <string name="volume_keys_control_ring_stream_title">Tlačidlá hlasitosti ovládajú hlasitosť zvonenia</string>
-  <string name="volume_keys_control_ring_stream_summary">Pri zapnutí tlačidlá hlasitosti ovládajú hlasitosť zvonenia, inak ovládajú hlasitosť médií.</string>
+  <string name="volume_keys_control_ring_stream_title">Ovládanie hlasitosti zvonenia</string>
+  <string name="volume_keys_control_ring_stream_summary_on">Tlačidlá hlasitosti ovládajú hlasitosť zvonenia</string>
+  <string name="volume_keys_control_ring_stream_summary_off">Tlačidlá hlasitosti ovládajú hlasitosť médií</string>
   <string name="power_end_call_title">Ukončiť hovor</string>
   <string name="power_end_call_summary">Stlačením tlačidla napájania sa ukončí aktuálny hovor</string>
   <string name="button_wake_title">Prebudiť zariadenie</string>
@@ -250,6 +251,7 @@
   <string name="privacy_guard_reset_text">Obnoviť povolenia?</string>
   <string name="privacy_guard_help_text">Na tejto obrazovke môžete jednoduchým kliknutím vybrať, pre ktoré aplikácie bude Ochrana súkromia aktívna. Vybraným aplikáciám nebude umožnený prístup k vašim osobným údajom ako sú kontakty, správy alebo denníky hovorov. Dlhým kliknutím na položku sa otvorí obrazovka s podrobnosťami o danej aplikácii.\n\nPredvolene nie sú zobrazené vstavané aplikácie. Ak ich chcete zobraziť, vyberte príslušnú možnosť v ponuke.</string>
   <string name="privacy_guard_manager_show_system_apps">Zobraziť vstavané aplikácie</string>
+  <string name="privacy_guard_notification_title">Zobraziť oznámenie</string>
   <string name="app_ops_btn_text">Upraviť</string>
   <string name="increasing_ring_volume_option_title">Zvyšovanie hlasitosti zvonenia</string>
   <string name="increasing_ring_min_volume_title">Počiatočná hlasitosť</string>
@@ -344,6 +346,7 @@
   <string name="notification_light_missed_call_title">Zmeškaný hovor</string>
   <string name="notification_light_voicemail_title">Hlasový hovor</string>
   <string name="notification_light_screen_on">Upozorňovať pomocou LED pri zapnutej obrazovke</string>
+  <string name="notification_light_use_multiple_leds">Viaceré LED</string>
   <string name="keywords_lights_brightness_level">stlmiť jas LED svetiel</string>
   <string name="notification_ringtone_title_cm">Tón oznámenia</string>
   <string name="headset_connect_player_title">Spustiť aplikáciu na prehrávanie hudby</string>
@@ -586,7 +589,7 @@
   <string name="sdcard_eject" product="default">Odpojiť kartu SD</string>
   <string name="sdcard_eject_summary" product="default">Odpojiť kartu SD, takže ju môžete bezpečne odstrániť</string>
   <string name="sd_card_format" product="default">Vymazať kartu SD</string>
-  <string name="sd_card_format_summary" product="default">Vymažzať všetky dáta na karte SD, ako napríklad hudbu alebo fotografie</string>
+  <string name="sd_card_format_summary" product="default">Vymazať všetky dáta na karte SD, ako napríklad hudbu alebo fotografie</string>
   <string name="sdcard_mount" product="default">Pripojiť kartu SD</string>
   <string name="sdcard_insert_summary" product="default">Vložte kartu SD na pripojenie</string>
   <string name="usb_eject" product="default">Odpojiť USB úložisko</string>
@@ -686,6 +689,9 @@
   <string name="settings_cmlicense_activity_title">Právne informácie CyanogenMod</string>
   <string name="lockpattern_settings_enable_error_path_title">Zobraziť chybu vzoru</string>
   <string name="lockpattern_settings_enable_dots_title">Zobraziť body vzoru</string>
+  <string name="lock_directly_show_password">Priamo zobraziť zadanie hesla</string>
+  <string name="lock_directly_show_pattern">Priamo zobraziť zobrazenie vzoru</string>
+  <string name="lock_directly_show_pin">Priamo zobraziť zadanie PINu</string>
   <string name="unlock_quick_unlock_control_title">Rýchle odomknutie</string>
   <string name="unlock_quick_unlock_control_summary">Odomknúť automaticky po zadaní správneho PIN kódu alebo hesla</string>
   <string name="unlock_scramble_pin_layout_title">Dynamické rozloženie</string>
@@ -733,6 +739,7 @@
   <string name="qs_tile_heads_up">Plávajúce oznámenia</string>
   <string name="qs_tile_ambient_display">Ambientné zobrazenie</string>
   <string name="qs_tile_sync">Synchronizácia</string>
+  <string name="qs_tile_battery_saver">Šetrič batérie</string>
   <string name="qs_dynamic_tile_next_alarm">Ďalší budík</string>
   <string name="qs_dynamic_tile_ime_selector">Výber IME</string>
   <string name="qs_dynamic_tile_su">Root prístup</string>
@@ -772,6 +779,7 @@
   <string name="lockscreen_message">Kliknite na ikonu vľavo alebo vpravo a priraďte zástupcu obrazovky uzamknutia.</string>
   <string name="lockscreen_choose_action_title">Vyberte akciu</string>
   <string name="lockscreen_visualizer_title">Zobraziť hudobnú vizualizáciu</string>
+  <string name="nfc_title_category">NFC</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Spravovať nastavenie zabezpečených SMS</string>
   <string name="navigation_ring_title">Položky navigačného kruhu</string>
@@ -822,7 +830,8 @@
   <string name="interruptions_ignore_while_media_title">Zabrániť znižovaniu zvuku</string>
   <string name="interruptions_ignore_while_media_summary">Neznižovať hlasitosť pri prehrávaní médií po doručení upozornenia</string>
   <string name="none_is_silent_title">Nikdy stlmiť budíky</string>
-  <string name="none_is_silent_summary">Budíky v tichom režime zostanú aktívne</string>
+  <string name="none_is_silent_summary_on">Budíky nebudú ignorované v tichom režime</string>
+  <string name="none_is_silent_summary_off">Budíky budú ignorované v tichom režime</string>
   <string name="allow_lights_title">Povoliť svetlá oznámení</string>
   <string name="live_display_summary">Optimalizovať vašu obrazovku na základe dennej doby a podmienok okolia na zlepšenie čitateľnosti a zníženie únavy očí</string>
   <string name="live_display_mode">Režim zobrazenia</string>
@@ -890,6 +899,11 @@
   <string name="factory_reset_erase_sd_card_summary">Vymazať všetky dáta z karty SD, vrátane hudby a fotografií</string>
   <string name="factory_reset_warning_text_reset_now">OBNOVIŤ TERAZ</string>
   <string name="factory_reset_warning_text_message">Všetky vaše účty, aplikácie, údaje aplikácií a nastavenia systému v tomto zariadení budú odstránené z tohto zariadenia. Túto akciu nie je možné vrátiť späť.</string>
+  <string name="wifi_show_all">Zobraziť všetky siete</string>
+  <string name="wifi_show_protected">Zobraziť chránené siete</string>
+  <string name="wifi_show_open">Zobraziť otvorené siete</string>
+  <string name="wifi_empty_list_protected">Žiadne chránené Wi\u2011Fi siete</string>
+  <string name="wifi_empty_list_open">Žiadne otvorené siete Wi\u2011Fi</string>
   <string name="wifi_setting_countrycode_title">Kód oblasti Wi\u2011Fi</string>
   <string name="wifi_setting_countrycode_summary">Zadať kód oblasti pre Wi\u2011Fi</string>
   <string name="wifi_setting_countrycode_error">Vyskytol sa problém pri nastavovaní kódu oblasti.</string>
@@ -915,8 +929,8 @@
   <string name="fingerprint_dialog_title_rename">Upraviť odtlačok prstov</string>
   <string name="fingerprint_dialog_name_label">Názov odtlačku prstov</string>
   <string name="fingerprint_dialog_title_max_fingers_reached">Dosiahnutý maximálny počet odtlačkov prstov</string>
-  <string name="fingerprint_dialog_msg_max_fingers_reached">Môžete zapísať len <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> odtlačkov prstov. Vymažte existujúce odtlačky.</string>
-  <string name="fingerprint_title_manage_fingerprints">Spravovať odtlačky prstov <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
+  <string name="fingerprint_dialog_msg_max_fingers_reached">Môžete zapísať iba <xliff:g id="finger" example="5">%d</xliff:g> odtlačkov prstov. Vymažte existujúci odtlačok.</string>
+  <string name="fingerprint_title_manage_fingerprints"><xliff:g id="finger">%d</xliff:g> z <xliff:g id="max">%d</xliff:g> odtlačkov zapísaných</string>
   <string name="manage_fingerprints_description">Odtlačky prstov umožňujú rýchlo odomknúť telefón a zosnímať fotografie.</string>
   <string name="fingerprint_enrollment_introduction_title">Nájsť váš senzor</string>
   <string name="fingerprint_enrollment_introduction_instructions">Snímač odtlačkov prstov sa nachádza na prednej alebo zadnej strane telefónu.</string>

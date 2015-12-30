@@ -26,8 +26,8 @@
   <string name="show_dev_already_cm">Ni potrebe, ste že omogočili nastavitve za razvijalce.</string>
   <string name="development_tools_title">Razvojna orodja</string>
   <string name="root_access">Skrbniški dostop</string>
-  <string name="root_access_warning_title">Omogoči skrbniški dostop?</string>
-  <string name="root_access_warning_message">Omogočanje programom, da zahtevajo skrbniški dostop je nevarno in lahko ogrozi varnost vašega sistema!</string>
+  <string name="root_access_warning_title">Dovoli skrbniški dostop?</string>
+  <string name="root_access_warning_message">Dovoljevanje programom, da zahtevajo skrbniški dostop je nevarno in lahko ogrozi varnost vašega sistema!</string>
   <string name="root_access_none">Onemogočeno</string>
   <string name="root_access_apps">Samo programi</string>
   <string name="root_access_adb">Samo ADB</string>
@@ -46,7 +46,7 @@
   <string name="profile_write_success">Oznaka uspešno zapisana</string>
   <string name="profile_write_failed">Zapis oznake spodletel!</string>
   <string name="profile_selected">Izbrani profil: %1$s</string>
-  <string name="profile_nfc_text">Zapis profila v oznako NFC omogoča tapanje oznak, da izberete profil. Ponovno tapanje bo izbralo prejšnji izbrani profil.</string>
+  <string name="profile_nfc_text">Zapis profila v oznako NFC dovoli tapanje oznak, da izberete profil. Ponovno tapanje bo izbralo prejšnji izbrani profil.</string>
   <string name="profile_unknown_nfc_tag">Neznan profil</string>
   <string name="profile_add_nfc_text">Ta oznaka NFC se nanaša na neznan profil. Pripenjanje te oznake k obstoječemu profilu bo omogočilo prihodnje izbiranje profila.</string>
   <string name="profile_select">Izberite profil</string>
@@ -88,7 +88,7 @@
   <string name="profile_lockmode_policy_disabled_summary">To možnost profila je onemogočilo pravilo skrbnika naprave</string>
   <string name="profile_lockmode_insecure_summary">Ne vprašaj za PIN ali geslo</string>
   <string name="profile_lockmode_disabled_summary">Onemogoči zaklepanje zaslona</string>
-  <string name="profile_airplanemode_title">Način letenja</string>
+  <string name="profile_airplanemode_title">Način za letalo</string>
   <string name="profile_brightness_title">Svetlost zaslona</string>
   <string name="profile_brightness_override_summary">Nastavi na %1$d%%</string>
   <string name="profile_brightness_override_checkbox_label">Preglasi svetlost</string>
@@ -133,8 +133,9 @@
   <string name="volbtn_cursor_control_on_reverse">Glasnost gor/dol premakne kazalec desno/levo</string>
   <string name="swap_volume_buttons_title">Preusmeri</string>
   <string name="swap_volume_buttons_summary">Zamenjaj gumba za glasnost, kadar je zaslon zasukan</string>
-  <string name="volume_keys_control_ring_stream_title">Tipki za glas.nadz. glas. zvonj.</string>
-  <string name="volume_keys_control_ring_stream_summary">Če je vklopljeno, tipki za glasnost nadzirata glasnost zvonjenja. Če je izklopljeno, tipki za glasnost nadzirata glasnost predstavnosti.</string>
+  <string name="volume_keys_control_ring_stream_title">Nadzor glasnosti zvonjenja</string>
+  <string name="volume_keys_control_ring_stream_summary_on">Gumba za glasnost nadzirata glasnost zvonjenja</string>
+  <string name="volume_keys_control_ring_stream_summary_off">Gumba za glasnost nadzirata glasnost predstavnosti</string>
   <string name="power_end_call_title">Končaj klic</string>
   <string name="power_end_call_summary">Pritisk na gumb za vklop/izklop bo končal trenutni klic</string>
   <string name="button_wake_title">Zbudi napravo</string>
@@ -155,7 +156,7 @@
   <string name="power_menu_reboot_title">Meni ponovnega zagona</string>
   <string name="power_menu_screenshot_title">Zaslonska slika</string>
   <string name="power_menu_profiles_title">Preklopnik profilov</string>
-  <string name="power_menu_airplane_title">Način letenja</string>
+  <string name="power_menu_airplane_title">Način za letalo</string>
   <string name="power_menu_users_title">Preklopnik uporabnikov</string>
   <string name="power_menu_settings_title">Bližnjica nastavitev</string>
   <string name="power_menu_lockdown_title">Zaklepanje naprave</string>
@@ -232,7 +233,6 @@
   <string name="update_recovery_off_warning">OPOZORILO: Ko je ta značilnost onemogočena, nameščena obnovitev ne bo posodobljena z nadgradnjami OS-a.\n\nPrihodnje posodobitve OS-a se morda ne bodo namestile z zastarelimi ali prilagojenimi različicami obnovitve.\n\nAli želite onemogočiti to značilnost?</string>
   <string name="mod_version">Različica CyanogenMod</string>
   <string name="mod_version_default">Neznano</string>
-  <string name="security_patch">Raven varnostnega popravka za Android</string>
   <string name="device_model">Model naprave</string>
   <string name="device_name">Ime naprave</string>
   <string name="build_date">Datum izgradnje</string>
@@ -347,6 +347,7 @@
   <string name="notification_light_missed_call_title">Neodgovorjen klic</string>
   <string name="notification_light_voicemail_title">Glasovna pošta</string>
   <string name="notification_light_screen_on">Lučke z vkl. zaslonom</string>
+  <string name="notification_light_use_multiple_leds">Več LED-ov</string>
   <string name="keywords_lights_brightness_level">zatemni svetlost lučk</string>
   <string name="notification_ringtone_title_cm">Ton obvestila</string>
   <string name="headset_connect_player_title">Zaženi program za glasbo</string>
@@ -360,7 +361,7 @@
   <string name="high_touch_sensitivity_title">Visoka občutljivost dotika</string>
   <string name="high_touch_sensitivity_summary">Povečaj občutljivost dotika, tako da ga lahko uporabite, ko nosite rokavice</string>
   <string name="touchscreen_hovering_title">Prehod zaslona na dotik</string>
-  <string name="touchscreen_hovering_summary">Omogoča vam prehod nad zaslonom, kot miška v spletnih brskalnikih, oddaljenih namizjih itd.</string>
+  <string name="touchscreen_hovering_summary">Dovoli vam prehod nad zaslonom, kot miška v spletnih brskalnikih, oddaljenih namizjih itd.</string>
   <string name="app_ops_summaries_coarse_location">groba lokacija</string>
   <string name="app_ops_summaries_fine_location">fina lokacija</string>
   <string name="app_ops_summaries_gps">GPS</string>
@@ -648,7 +649,7 @@
   <string name="sim_disabled">onemogočeno</string>
   <string name="sim_missing">manjka ali je poškodovana</string>
   <string name="sim_enabler_need_disable_sim">Onemogoči kartico SIM?</string>
-  <string name="sim_enabler_airplane_on">Opravila ni mogoče izvesti, ko je vključen način letenja.</string>
+  <string name="sim_enabler_airplane_on">Opravila ni mogoče izvesti, ko je vključen način za letalo.</string>
   <string name="sim_enabler_in_call">Opravila ni mogoče izvesti, ko se opravlja klic.</string>
   <string name="sim_enabler_both_inactive">Vseh kartic SIM ni mogoče onemogočiti</string>
   <string name="sim_enabler_sim">SIM</string>
@@ -664,7 +665,7 @@
   <string name="external_storage_turn_on">Zunanja pomnilniška naprava je vklopljena</string>
   <string name="external_storage_turn_off">Zunanja pomnilniška naprava je izklopljena</string>
   <string name="stats_collection_title">Zbiranje statistike</string>
-  <string name="stats_collection_summary">Ko je omogočeno, omogoča zbiranje metrik</string>
+  <string name="stats_collection_summary">Ko je omogočeno, dovoli zbiranje metrik</string>
   <string name="power_notifications_category_title">Zvoki ob polnjenju</string>
   <string name="power_notifications_enable_title">Omogoči</string>
   <string name="power_notifications_enable_summary">Predvajaj zvok ob priključitvi ali odklopu vira napajanja</string>
@@ -720,7 +721,7 @@
   <string name="qs_tile_bluetooth">Bluetooth</string>
   <string name="qs_tile_display_inversion">Obrnitev barv</string>
   <string name="qs_tile_cellular_data">Podatkovna povezava</string>
-  <string name="qs_tile_airplane_mode">Način letenja</string>
+  <string name="qs_tile_airplane_mode">Način za letalo</string>
   <string name="qs_tile_display_rotation">Sukanje</string>
   <string name="qs_tile_flashlight">Svetilka</string>
   <string name="qs_tile_location">Lokacija</string>
@@ -779,6 +780,7 @@
   <string name="lockscreen_message">Tapnite ikono na levi ali desni, da ponovno dodelite bližnjico zaslona za zaklepanje.</string>
   <string name="lockscreen_choose_action_title">Izberite dejanje</string>
   <string name="lockscreen_visualizer_title">Prikaži predočilnik glasbe</string>
+  <string name="nfc_title_category">NFC</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Upravljajte z varnimi nastavitvami SMS</string>
   <string name="navigation_ring_title">Cilji kroga za krmarjenje</string>
@@ -829,7 +831,8 @@
   <string name="interruptions_ignore_while_media_title">Prepreči zvočno izognitev</string>
   <string name="interruptions_ignore_while_media_summary">Ne zmanjšaj glasnosti predvajanja predstavnosti, ko prispe obvestilo</string>
   <string name="none_is_silent_title">Nikoli ne utišaj budilk</string>
-  <string name="none_is_silent_summary">Tihi način vedno sproži budilko</string>
+  <string name="none_is_silent_summary_on">Budilke ne bodo prezrte v tihem načinu</string>
+  <string name="none_is_silent_summary_off">Budilke bodo prezrte v načinu Brez</string>
   <string name="allow_lights_title">Dovoli lučke obvestil</string>
   <string name="live_display_summary">Optimiziraj zaslon glede na čas dneva in pogoje okolice, da se izboljša berljivost in zmanjša obremenitev oči</string>
   <string name="live_display_mode">Način prikaza</string>
@@ -852,7 +855,7 @@
   <string name="live_display_color_profile_dynamic_title">Dinamični</string>
   <string name="live_display_color_profile_dynamic_summary">Izboljšane barve in svetle bele barve</string>
   <string name="live_display_color_profile_cinema_title">Kino</string>
-  <string name="live_display_color_profile_cinema_summary">Popolno ponovno proizvajanje barv za predstavnost</string>
+  <string name="live_display_color_profile_cinema_summary">Popolna izvedba barv za predstavnost</string>
   <string name="live_display_color_profile_astronomy_title">Astronomija</string>
   <string name="live_display_color_profile_astronomy_summary">Globoka rdeča za ohranitev nočnega vida</string>
   <string name="battery_saver_threshold">Prag ohranjevalnika baterije</string>
@@ -861,7 +864,7 @@
   <string name="anonymous_statistics_title">Statistika CyanogenMod</string>
   <string name="anonymous_statistics_summary">Pomagajte izboljšati CyanogenMod tako, da izberete pošiljanje anonimne statistike</string>
   <string name="anonymous_statistics_warning_title">O programu</string>
-  <string name="anonymous_statistics_warning">Izbira statistike CyanogenMod bo omogočila pošiljanje neosebnih podatkov
+  <string name="anonymous_statistics_warning">Izbira statistike CyanogenMod bo dovolila pošiljanje neosebnih podatkov
         razvijalcem CyanogenModa, da lahko sledijo edinstvenim namestitvam v napravah. Poslani podatki vključujejo edinstven določevalec,
         ki ne ogroža vaše zasebnosti in osebnih podatkov. Podatki so poslani ob vsakem zagonu.\n\nZa primer poslanih podatkov tapnite Predogled podatkov.</string>
   <string name="enable_reporting_title">Omogoči poročanje</string>
@@ -899,6 +902,11 @@
   <string name="factory_reset_erase_sd_card_summary">Izbriši vse podatke na kartici SD, vključno z glasbo in fotografijami</string>
   <string name="factory_reset_warning_text_reset_now">PONASTAVI ZDAJ</string>
   <string name="factory_reset_warning_text_message">Vsi vaši računi, programi, njihovi podatki in sistemske nastavitve bodo odstranjeni iz te naprave. Tega ni mogoče povrniti.</string>
+  <string name="wifi_show_all">Prikaži vse</string>
+  <string name="wifi_show_protected">Prikaži zaščitena omrežja</string>
+  <string name="wifi_show_open">Prikaži odprta omrežja</string>
+  <string name="wifi_empty_list_protected">Ni zaščitenih omrežij Wi\u2011Fi</string>
+  <string name="wifi_empty_list_open">Ni odprtih omrežij Wi\u2011Fi</string>
   <string name="wifi_setting_countrycode_title">Območna koda Wi\u2011Fi</string>
   <string name="wifi_setting_countrycode_summary">Določite območno kodo za Wi\u2011Fi</string>
   <string name="wifi_setting_countrycode_error">Pri nastavitvi območne kode je prišlo do težave.</string>
@@ -925,8 +933,8 @@
   <string name="fingerprint_dialog_name_label">Ime prstnega odtisa</string>
   <string name="fingerprint_dialog_title_max_fingers_reached">Največje št. prsnih odtisov dosežno</string>
   <string name="fingerprint_dialog_msg_max_fingers_reached">Vnesete lahko samo <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> prstnih odtisov. Izbrišite obstoječega.</string>
-  <string name="fingerprint_title_manage_fingerprints">Upravljaj s prstnimi odtisi <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
-  <string name="manage_fingerprints_description">Prstni odtisi vam omogočajo hitri odklep telefona in snemanje fotografij.</string>
+  <string name="fingerprint_title_manage_fingerprints">Vnesenih <xliff:g id="finger">%d</xliff:g> od <xliff:g id="max">%d</xliff:g> prstnih odtisov</string>
+  <string name="manage_fingerprints_description">Prstni odtisi vam omogočajo hitro odklepanje telefona in snemanje fotografij.</string>
   <string name="fingerprint_enrollment_introduction_title">Najdi moje tipalo</string>
   <string name="fingerprint_enrollment_introduction_instructions">Tipalo prstnih odtisov je nameščeno na sprednji ali zadnji strani vašega telefona.</string>
   <string name="fingerprint_enrollment_scan_title">Pridržite za 3 sekunde</string>
